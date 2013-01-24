@@ -1,4 +1,5 @@
 <footer class="row">
+<hr>
 	<div class="six columns">
 		<ul class="inline-list">
 		<% loop Menu(1) %>

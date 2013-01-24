@@ -2,6 +2,12 @@
 <% include BreadCrumbs %>
 $Content
 
+<% if Form %>
+<div class="row">
+	<div class="six columns centered">
 		$Form
-		$PageComments
+	</div>
 </div>
+<% end_if %>
+	
+$PageComments

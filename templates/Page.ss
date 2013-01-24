@@ -30,7 +30,7 @@
 	<div class="row" role="main">
 		<div class="twelve columns">
 			$Layout
-		<hr>
+
 		</div>
 
 	</div>
@@ -38,7 +38,42 @@
 	<% include Footer %>
 
 
+
+
+	<!-- Instead of including files separately in template copy this code to mysite/code/Page.php init() method 
+		and let Silverstripe combine and minify needed js files for you.
+
+	$ThemeFolder = SSViewer::get_theme_folder();
+	Requirements::combine_files(
+			'javascript.js',
+			array(
+					$ThemeFolder.'/javascripts/foundation/jquery.js',
+					$ThemeFolder.'/javascripts/foundation/jquery.cookie.js',
+					$ThemeFolder.'/javascripts/foundation/jquery.event.move.js',
+					$ThemeFolder.'/javascripts/foundation/jquery.event.swipe.js',
+					$ThemeFolder.'/javascripts/foundation/jquery.foundation.accordion.js',
+					$ThemeFolder.'/javascripts/foundation/jquery.foundation.alerts.js',
+					$ThemeFolder.'/javascripts/foundation/jquery.foundation.buttons.js',
+					$ThemeFolder.'/javascripts/foundation/jquery.foundation.clearing.js',
+					$ThemeFolder.'/javascripts/foundation/jquery.foundation.forms.js',
+					$ThemeFolder.'/javascripts/foundation/jquery.foundation.joyride.js',
+					$ThemeFolder.'/javascripts/foundation/jquery.foundation.magellan.js',
+					$ThemeFolder.'/javascripts/foundation/jquery.foundation.mediaQueryToggle.js',
+					$ThemeFolder.'/javascripts/foundation/jquery.foundation.navigation.js',
+					$ThemeFolder.'/javascripts/foundation/jquery.foundation.orbit.js',
+					$ThemeFolder.'/javascripts/foundation/jquery.foundation.reveal.js',
+					$ThemeFolder.'/javascripts/foundation/jquery.foundation.tabs.js',		
+					$ThemeFolder.'/javascripts/foundation/jquery.foundation.tooltips.js',
+					$ThemeFolder.'/javascripts/foundation/jquery.foundation.topbar.js',
+					$ThemeFolder.'/javascripts/foundation/jquery.placeholder.js',
+					$ThemeFolder.'/javascripts/foundation/app.js',
+			)
+		);
+
+	-->
+	
 	<!-- Included JS Files (Uncompressed) -->
+
 	<% require javascript('themes/foundation/javascripts/foundation/jquery.js') %>
 	
 	<% require javascript('themes/foundation/javascripts/foundation/jquery.cookie.js') %>
@@ -77,7 +112,6 @@
 	
 	<% require javascript('themes/foundation/javascripts/foundation/jquery.placeholder.js') %>
 	
-
 	<!-- Application Javascript, safe to override -->
 	<% require javascript('themes/foundation/javascripts/foundation/app.js') %>
 
