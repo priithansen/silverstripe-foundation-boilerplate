@@ -1,9 +1,7 @@
-<div class="content-container">	
-	<article>
-		<h1>$Title</h1>
-		<div class="content">$Content</div>
-	</article>
+<h2 class="subheader">$Title</h2>
+<% include BreadCrumbs %>
+$Content
+
 		$Form
 		$PageComments
 </div>
-<% include SideBar %>

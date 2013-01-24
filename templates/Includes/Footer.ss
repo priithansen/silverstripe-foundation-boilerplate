@@ -1,8 +1,12 @@
-<footer class="footer" role="contentinfo">
-	<div class="inner copy">
-		<div class="left">
-			<a href="$BaseHref" class="brand" rel="home">$SiteConfig.Title</a>
-			<span class="arrow">&rarr;</span> <% include Navigation %></div>
-		<small class="right"><a href="http://simple.innovatif.com/about/">Theme</a> by <a href="http://www.saratusar.com">Sara</a> (Innovatif) / Powered by <a href="http://silverstripe.org">Silverstripe</a></small>
+<footer class="row">
+	<div class="six columns">
+		<ul class="inline-list">
+		<% loop Menu(1) %>
+			<li><a href="$Link" title="$Title.XML">$MenuTitle.XML</a></li>
+		<% end_loop %>
+		</ul>
+	</div>
+	<div class="six columns">
+		<p class="right"><a href="http://foundation.zurb.com">Framework</a> by <a href="http://www.zurb.com">ZURB</a> / Powered by <a href="http://silverstripe.org">Silverstripe</a></p>
 	</div>
 </footer>

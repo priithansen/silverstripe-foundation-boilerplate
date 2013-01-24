@@ -1,45 +1,85 @@
 <!DOCTYPE html>
-<!--
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-Simple. by Sara (saratusar.com, @saratusar) for Innovatif - an awesome Slovenia-based digital agency (innovatif.com/en)
-Change it, enhance it and most importantly enjoy it!
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
--->
 
-<!--[if !IE]><!-->
-<html lang="$ContentLocale">
-<!--<![endif]-->
-<!--[if IE 6 ]><html lang="$ContentLocale" class="ie ie6"><![endif]-->
-<!--[if IE 7 ]><html lang="$ContentLocale" class="ie ie7"><![endif]-->
-<!--[if IE 8 ]><html lang="$ContentLocale" class="ie ie8"><![endif]-->
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="$ContentLocale"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="$ContentLocale"> <!--<![endif]-->
+
 <head>
 	<% base_tag %>
+	<meta charset="utf-8" />
+
+	<!-- Set the viewport width to device width for mobile -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 	<title><% if $MetaTitle %>$MetaTitle<% else %>$Title<% end_if %> &raquo; $SiteConfig.Title</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
 	$MetaTags(false)
-	<!--[if lt IE 9]>
-	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-	<% require themedCSS('reset') %>
-	<% require themedCSS('typography') %>
-	<% require themedCSS('form') %>
-	<% require themedCSS('layout') %>
+
+	<!-- Included CSS Files -->
+	<% require themedCSS('app') %>
+
+	<script src="$ThemeDir/javascripts/foundation/modernizr.foundation.js"></script>
+
 	<link rel="shortcut icon" href="$ThemeDir/images/favicon.ico" />
 </head>
-<body class="$ClassName<% if not $Menu(2) %> no-sidebar<% end_if %>">
-<% include Header %>
-<div class="main" role="main">
-	<div class="inner typography">
-		$Layout
-	</div>
-</div>
-<% include Footer %>
 
-<% require javascript('framework/thirdparty/jquery/jquery.js') %>
-<%-- Please move: Theme javascript (below) should be moved to mysite/code/page.php  --%>
-<script type="text/javascript" src="{$ThemeDir}/javascript/script.js"></script>
+<body>
+	
+	<% include Header %>
+	
+	<div class="row" role="main">
+		<div class="twelve columns">
+			$Layout
+		<hr>
+		</div>
+
+	</div>
+	
+	<% include Footer %>
+
+
+	<!-- Included JS Files (Uncompressed) -->
+	<% require javascript('themes/foundation/javascripts/foundation/jquery.js') %>
+	
+	<% require javascript('themes/foundation/javascripts/foundation/jquery.cookie.js') %>
+	
+	<% require javascript('themes/foundation/javascripts/foundation/jquery.event.move.js') %>
+	
+	<% require javascript('themes/foundation/javascripts/foundation/jquery.event.swipe.js') %>
+	
+	<% require javascript('themes/foundation/javascripts/foundation/jquery.foundation.accordion.js') %>
+	
+	<% require javascript('themes/foundation/javascripts/foundation/jquery.foundation.alerts.js') %>
+	
+	<% require javascript('themes/foundation/javascripts/foundation/jquery.foundation.buttons.js') %>
+	
+	<% require javascript('themes/foundation/javascripts/foundation/jquery.foundation.clearing.js') %>
+	
+	<% require javascript('themes/foundation/javascripts/foundation/jquery.foundation.forms.js') %>
+	
+	<% require javascript('themes/foundation/javascripts/foundation/jquery.foundation.joyride.js') %>
+	
+	<% require javascript('themes/foundation/javascripts/foundation/jquery.foundation.magellan.js') %>
+	
+	<% require javascript('themes/foundation/javascripts/foundation/jquery.foundation.mediaQueryToggle.js') %>
+	
+	<% require javascript('themes/foundation/javascripts/foundation/jquery.foundation.navigation.js') %>
+	
+	<% require javascript('themes/foundation/javascripts/foundation/jquery.foundation.orbit.js') %>
+	
+	<% require javascript('themes/foundation/javascripts/foundation/jquery.foundation.reveal.js') %>
+	
+	<% require javascript('themes/foundation/javascripts/foundation/jquery.foundation.tabs.js') %>
+	
+	<% require javascript('themes/foundation/javascripts/foundation/jquery.foundation.tooltips.js') %>
+	
+	<% require javascript('themes/foundation/javascripts/foundation/jquery.foundation.topbar.js') %>
+	
+	<% require javascript('themes/foundation/javascripts/foundation/jquery.placeholder.js') %>
+	
+
+	<!-- Application Javascript, safe to override -->
+	<% require javascript('themes/foundation/javascripts/foundation/app.js') %>
 
 </body>
 </html>
