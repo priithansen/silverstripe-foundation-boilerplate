@@ -202,7 +202,7 @@ h6 {
 
 /* line 34, ../../../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/common/_typography.scss */
 hr {
-  border: solid #ddd;
+  border: solid #dddddd;
   border-width: 1px 0 0;
   clear: both;
   margin: 22px 0 21px;
@@ -313,7 +313,7 @@ blockquote, blockquote p {
 blockquote {
   margin: 0 0 17px;
   padding: 9px 20px 0 19px;
-  border-left: 1px solid #ddd;
+  border-left: 1px solid #dddddd;
 }
 /* line 71, ../../../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/common/_typography.scss */
 blockquote cite {
@@ -335,7 +335,7 @@ abbr, acronym {
   text-transform: uppercase;
   font-size: 90%;
   color: #222222;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #dddddd;
   cursor: help;
 }
 
@@ -390,7 +390,7 @@ abbr {
   /* Don't show links for images, or javascript/internal links */
   /* line 93, ../../../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/common/_typography.scss */
   pre, blockquote {
-    border: 1px solid #999;
+    border: 1px solid #999999;
     page-break-inside: avoid;
   }
 
@@ -592,7 +592,7 @@ select {
 /* Fieldsets */
 /* line 43, ../../../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/common/_forms.scss */
 fieldset {
-  border: solid 1px #ddd;
+  border: solid 1px #dddddd;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -2095,7 +2095,7 @@ div.button-bar ul.button-group:last-child {
 }
 /* line 25, ../../../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_navbar.scss */
 .nav-bar > li.has-flyout.is-touch > a.flyout-toggle {
-  border-left: 1px dashed #666;
+  border-left: 1px dashed #666666;
 }
 /* line 30, ../../../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_navbar.scss */
 .nav-bar > li > a:first-child {
@@ -2212,7 +2212,7 @@ ul.flyout, .nav-bar li ul {
 }
 /* line 65, ../../../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_navbar.scss */
 ul.flyout li, .nav-bar li ul li {
-  border-left: solid 3px #CCC;
+  border-left: solid 3px #cccccc;
 }
 /* line 66, ../../../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_navbar.scss */
 ul.flyout li a, .nav-bar li ul li a {
@@ -3078,7 +3078,7 @@ ul.orbit-bullets li.active.has-thumb {
 @media print {
   /* line 33, ../../../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_reveal.scss */
   .reveal-modal {
-    border: solid 1px #000;
+    border: solid 1px black;
     background: #fff;
   }
 }
@@ -3216,11 +3216,11 @@ ul.orbit-bullets li.active.has-thumb {
   text-decoration: none;
   font-size: 20px;
   font-weight: normal;
-  line-height: .5 !important;
+  line-height: 0.5 !important;
 }
 /* line 30, ../../../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_joyride.scss */
 .joyride-close-tip:hover, .joyride-close-tip:focus {
-  color: #eee !important;
+  color: #eeeeee !important;
 }
 
 /* line 33, ../../../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_joyride.scss */
@@ -3643,7 +3643,7 @@ ul.block-grid[data-clearing] {
 }
 /* line 42, ../../../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_tabs.scss */
 .tabs.pill.contained {
-  border-bottom: solid 1px #eee;
+  border-bottom: solid 1px #eeeeee;
   margin-bottom: 0;
 }
 /* line 44, ../../../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_tabs.scss */
@@ -4292,7 +4292,7 @@ ul.inline-list > li > *, ul.link-list > li > * {
 /* line 207, ../../../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
 .th img {
   display: block;
-  border: solid 4px #fff;
+  border: solid 4px white;
   -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
@@ -4354,7 +4354,7 @@ table {
   -o-border-radius: 3px;
   border-radius: 3px;
   margin: 0 0 18px;
-  border: 1px solid #ddd;
+  border: 1px solid #dddddd;
 }
 
 /* line 234, ../../../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
@@ -4417,7 +4417,7 @@ table tbody tr td {
 ul.vcard {
   display: inline-block;
   margin: 0 0 12px 0;
-  border: 1px solid #ddd;
+  border: 1px solid #dddddd;
   padding: 10px;
 }
 /* line 254, ../../../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
@@ -5474,7 +5474,7 @@ table.hide-for-medium {
   /* line 278, ../../../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_mqueries.scss */
   .nav-bar > li > a.main {
     text-align: left;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #dddddd;
     border-right: none;
   }
   /* line 279, ../../../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_mqueries.scss */
@@ -5612,7 +5612,7 @@ table.hide-for-medium {
   .tabs.mobile {
     width: auto;
     margin: 20px -20px 40px;
-    border-bottom: solid 1px #ccc;
+    border-bottom: solid 1px #cccccc;
     height: auto;
     margin: 20px -15px 0px -15px;
   }
@@ -5634,7 +5634,7 @@ table.hide-for-medium {
     border: none;
     border-left: none;
     border-right: none;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #cccccc;
     background: #fff;
   }
   /* line 321, ../../../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_mqueries.scss */

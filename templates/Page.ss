@@ -71,7 +71,7 @@
 		);
 
 	-->
-	
+	<!-- JS includes after this can be removed if above method is used instead -->
 	<!-- Included JS Files (Uncompressed) -->
 
 	<% require javascript('themes/foundation/javascripts/foundation/jquery.js') %>

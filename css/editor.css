@@ -204,7 +204,7 @@ h6 {
 
 /* line 34, ../../../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/common/_typography.scss */
 hr {
-  border: solid #ddd;
+  border: solid #dddddd;
   border-width: 1px 0 0;
   clear: both;
   margin: 22px 0 21px;
@@ -315,7 +315,7 @@ blockquote, blockquote p {
 blockquote {
   margin: 0 0 17px;
   padding: 9px 20px 0 19px;
-  border-left: 1px solid #ddd;
+  border-left: 1px solid #dddddd;
 }
 /* line 71, ../../../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/common/_typography.scss */
 blockquote cite {
@@ -337,7 +337,7 @@ abbr, acronym {
   text-transform: uppercase;
   font-size: 90%;
   color: #222222;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #dddddd;
   cursor: help;
 }
 
@@ -392,7 +392,7 @@ abbr {
   /* Don't show links for images, or javascript/internal links */
   /* line 93, ../../../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/common/_typography.scss */
   pre, blockquote {
-    border: 1px solid #999;
+    border: 1px solid #999999;
     page-break-inside: avoid;
   }
 
