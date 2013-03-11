@@ -1,6 +1,6 @@
 <% if $Level(2) %>
 <div class="row">
-	<div class="twelve columns">
+	<div class="large-12 columns">
 		$BreadCrumbs
 	</div>
 </div>

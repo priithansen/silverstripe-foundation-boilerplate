@@ -1,10 +1,10 @@
-# Foundation 3 Theme for SilverStripe CMS
+# Foundation 4 Theme for SilverStripe CMS
 
 This is default installation of Foundation frameworks Compass Gem modified to work as Silverstripe CMS theme.
 
 ## Credits and Authors
 
- * Foundation 3 Documentation - <http://foundation.zurb.com/>
+ * Foundation 4 Documentation - <http://foundation.zurb.com/>
  * Silverstripe CMS - <http://www.silverstripe.org/>
 
 ## Requirements

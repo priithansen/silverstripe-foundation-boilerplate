@@ -4,7 +4,7 @@ $Content
 
 <% if Form %>
 <div class="row">
-	<div class="six columns centered">
+	<div class="large-6 small-centered columns">
 		$Form
 	</div>
 </div>

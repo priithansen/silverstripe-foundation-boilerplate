@@ -4,15 +4,9 @@
 
 @import "settings";
 
-@import "compass/css3";
-@import "foundation/settings";
-@import "foundation/functions/all";
-
-@import "modular-scale";
-@import "foundation/common/globals";
-
-@import "foundation/common/typography";
+@import "foundation/foundation-global";
+@import "foundation/components/type";
 
 body.mceContentBody{
-	font-size: $baseFontSize;
+	font-size: $em-base;
 }
