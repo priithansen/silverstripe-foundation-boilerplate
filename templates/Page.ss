@@ -43,13 +43,12 @@
 	</div>
 	
 	<% include Footer %>
-	<!-- 
+
 	<script>
-	document.write('<script src=' +
-	('__proto__' in {} ? '{$ThemeDir}/javascripts/vendor/zepto' : '{$ThemeDir}/javascripts/vendor/jquery') +
-	'.js><\/script>')
+		document.write('<script src=' +
+		('__proto__' in {} ? '{$ThemeDir}/javascripts/vendor/zepto' : '{$ThemeDir}/javascripts/vendor/jquery') +
+		'.js><\\/script>')
 	</script>
-	-->
 
 	<!-- Instead of including files separately in template copy this code to mysite/code/Page.php init() method 
 		and let Silverstripe combine and minify needed js files for you.
@@ -58,7 +57,6 @@
 	Requirements::combine_files(
 			'javascript.js',
 			array(
-					CURRENT_THEME_DIR.'/javascripts/vendor/zepto.js',
 					CURRENT_THEME_DIR.'/javascripts/foundation/foundation.js',
 					CURRENT_THEME_DIR.'/javascripts/foundation/foundation.alerts.js',
 					CURRENT_THEME_DIR.'/javascripts/foundation/foundation.clearing.js',
@@ -80,7 +78,7 @@
 	<!-- JS includes after this can be removed if above method is used instead -->
 	<!-- Included JS Files (Uncompressed) -->
 
-	<% require javascript('themes/foundation/javascripts/vendor/zepto.js') %>
+	
 	<% require javascript('themes/foundation/javascripts/foundation/foundation.js') %>
 	
 	<% require javascript('themes/foundation/javascripts/foundation/foundation.alerts.js') %>
