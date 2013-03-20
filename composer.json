@@ -1,0 +1,17 @@
+{
+    "name": "priithansen/silverstripe-foundation-boilerplate",
+    "description": "Foundation 4 Theme for SilverStripe CMS",
+    "type": "silverstripe-theme",
+    "keywords": ["silverstripe", "theme", "foundation", "boilerplate"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Priit Hansen",
+            "email": "priit@onebit.ee"
+        }
+    ],
+    "require": {
+        "composer/installers": "*",
+        "silverstripe/framework": "3.*"
+    }
+}
