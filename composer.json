@@ -10,6 +10,9 @@
             "email": "priit@onebit.ee"
         }
     ],
+    "extra": {
+        "installer-name": "foundation"
+    },
     "require": {
         "composer/installers": "*",
         "silverstripe/framework": "3.*"
