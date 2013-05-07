@@ -6,7 +6,7 @@
   Foundation.libs.topbar = {
     name : 'topbar',
 
-    version : '4.1.0',
+    version : '4.1.2',
 
     settings : {
       index : 0,
@@ -16,7 +16,7 @@
       init : false
     },
 
-    init : function (method, options) {
+    init : function (section, method, options) {
       var self = this;
 
       if (typeof method === 'object') {
@@ -85,23 +85,25 @@
             }
             section.find('li.moved').removeClass('moved');
             topbar.data('index', 0);
-          }
 
-          if (topbar.parent().hasClass('fixed')) {
+            if (topbar.hasClass('fixed')) {
+              topbar.parent().addClass('fixed');
+              topbar.removeClass('fixed');
+              $('body').css('padding-top',offst);
+            }
+          } else if (topbar.parent().hasClass('fixed')) {
             topbar.parent().removeClass('fixed');
+            topbar.addClass('fixed');
             $('body').css('padding-top','0');
             window.scrollTo(0,0);
-          } else if (topbar.hasClass('fixed expanded')) {
-            topbar.parent().addClass('fixed');
-            $('body').css('padding-top',offst);
           }
-
         })
 
         .on('click.fndtn.topbar', '.top-bar .has-dropdown>a', function (e) {
           var topbar = $(this).closest('.top-bar'),
               section = topbar.find('section, .section'),
-              titlebar = topbar.children('ul').first();
+              titlebar = topbar.children('ul').first(),
+              dropdownHeight = $(this).next('.dropdown').outerHeight();
 
           if (Modernizr.touch || self.breakpoint()) {
             e.preventDefault();
@@ -121,12 +123,14 @@
               section.find('>.name').css({right: 100 * topbar.data('index') + '%'});
             }
 
+            $('.top-bar').css('min-height', dropdownHeight);
+
             $this.siblings('ul')
               .height(topbar.data('height') + self.outerHeight(titlebar, true));
             topbar
               .css('min-height', topbar.data('height') + self.outerHeight(titlebar, true) * 2)
           }
-      });
+        });
 
       $(window).on('resize.fndtn.topbar', function () {
         if (!self.breakpoint()) {

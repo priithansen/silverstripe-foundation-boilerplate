@@ -14,7 +14,6 @@
 	$MetaTags(false)
 
 	<!-- Included CSS Files -->
-	<% require themedCSS('normalize') %>
 	<% require themedCSS('app') %>
 	
 	<script src="$ThemeDir/javascripts/vendor/custom.modernizr.js"></script>
