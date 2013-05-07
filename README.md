@@ -1,6 +1,9 @@
 # Foundation 4 Theme for SilverStripe CMS
 
 This is default installation of Foundation frameworks Compass Gem modified to work as Silverstripe CMS theme.
+
+## Screenshot
+
 ![Alt text](/images/screenshot.png?raw=true)
 
 ## Credits and Authors
