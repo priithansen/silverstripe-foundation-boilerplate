@@ -62,6 +62,7 @@
 					CURRENT_THEME_DIR.'/javascripts/foundation/foundation.cookie.js',
 					CURRENT_THEME_DIR.'/javascripts/foundation/foundation.dropdown.js',
 					CURRENT_THEME_DIR.'/javascripts/foundation/foundation.forms.js',
+					CURRENT_THEME_DIR.'/javascripts/foundation/foundation.interchange.js',
 					CURRENT_THEME_DIR.'/javascripts/foundation/foundation.joyride.js',
 					CURRENT_THEME_DIR.'/javascripts/foundation/foundation.magellan.js',
 					CURRENT_THEME_DIR.'/javascripts/foundation/foundation.orbit.js',
@@ -85,6 +86,7 @@
 	<% require javascript('themes/foundation/javascripts/foundation/foundation.cookie.js') %>
 	<% require javascript('themes/foundation/javascripts/foundation/foundation.dropdown.js') %>
 	<% require javascript('themes/foundation/javascripts/foundation/foundation.forms.js') %>
+	<% require javascript('themes/foundation/javascripts/foundation/foundation.interchange.js') %>
 	<% require javascript('themes/foundation/javascripts/foundation/foundation.joyride.js') %>
 	<% require javascript('themes/foundation/javascripts/foundation/foundation.magellan.js') %>
 	<% require javascript('themes/foundation/javascripts/foundation/foundation.orbit.js') %>
