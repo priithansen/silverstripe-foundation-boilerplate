@@ -166,7 +166,7 @@ if (typeof jQuery === "undefined" &&
   window.Foundation = {
     name : 'Foundation',
 
-    version : '4.2.2',
+    version : '4.3.0',
 
     cache : {},
 
@@ -231,8 +231,7 @@ if (typeof jQuery === "undefined" &&
         if (this.libs.hasOwnProperty(lib)) {
           this.patch(this.libs[lib]);
           return this.libs[lib].init.apply(this.libs[lib], args);
-        }
-        else {
+        } else {
           return function () {};
         }
       }.bind(this), lib);
@@ -267,7 +266,7 @@ if (typeof jQuery === "undefined" &&
     },
 
     random_str : function (length) {
-      var chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz'.split('');
+      var chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'.split('');
 
       if (!length) {
         length = Math.floor(Math.random() * chars.length);

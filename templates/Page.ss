@@ -57,6 +57,7 @@
 			'javascript.js',
 			array(
 					CURRENT_THEME_DIR.'/javascripts/foundation/foundation.js',
+					CURRENT_THEME_DIR.'/javascripts/foundation/foundation.abide.js',
 					CURRENT_THEME_DIR.'/javascripts/foundation/foundation.alerts.js',
 					CURRENT_THEME_DIR.'/javascripts/foundation/foundation.clearing.js',
 					CURRENT_THEME_DIR.'/javascripts/foundation/foundation.cookie.js',
@@ -80,7 +81,7 @@
 
 	
 	<% require javascript('themes/foundation/javascripts/foundation/foundation.js') %>
-	
+	<% require javascript('themes/foundation/javascripts/foundation/foundation.abide.js') %>	
 	<% require javascript('themes/foundation/javascripts/foundation/foundation.alerts.js') %>
 	<% require javascript('themes/foundation/javascripts/foundation/foundation.clearing.js') %>
 	<% require javascript('themes/foundation/javascripts/foundation/foundation.cookie.js') %>
