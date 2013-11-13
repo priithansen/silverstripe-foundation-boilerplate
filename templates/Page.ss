@@ -16,13 +16,13 @@
 	<!-- Included CSS Files -->
 	<% require themedCSS('foundation') %>
 	
-	<script src="$ThemeDir/js/vendor/custom.modernizr.js"></script>
+	<script src="$ThemeDir/js/thirdparty/custom.modernizr.js"></script>
 
 	<!-- This could be used in Page_Controller init() instead of having it here in template code.
 	define("CURRENT_THEME_DIR", SSViewer::get_theme_folder());
 	Requirements::insertHeadTags(sprintf(
 			'<script src="%s"></script>',
-			CURRENT_THEME_DIR . '/js/vendor/custom.modernizr.js'
+			CURRENT_THEME_DIR . '/js/thirdparty/custom.modernizr.js'
 		));
 	-->
 
@@ -43,12 +43,6 @@
 	
 	<% include Footer %>
 
-	<script>
-		document.write('<script src=' +
-		('__proto__' in {} ? '{$ThemeDir}/js/vendor/zepto' : '{$ThemeDir}/js/vendor/jquery') +
-		'.js><\\/script>')
-	</script>
-
 	<!-- Instead of including files separately in template copy this code to mysite/code/Page.php init() method 
 		and let Silverstripe combine and minify needed js files for you.
 
@@ -56,6 +50,7 @@
 	Requirements::combine_files(
 			'javascript.js',
 			array(
+					CURRENT_THEME_DIR.'/js/thrirdparty/jquery.js',
 					CURRENT_THEME_DIR.'/js/foundation/foundation.js',
 					CURRENT_THEME_DIR.'/js/foundation/foundation.abide.js',
 					CURRENT_THEME_DIR.'/js/foundation/foundation.alerts.js',
@@ -79,7 +74,7 @@
 	<!-- JS includes after this can be removed if above method is used instead -->
 	<!-- Included JS Files (Uncompressed) -->
 
-	
+	<% require javascript('themes/foundation/js/thirdparty/jquery.js') %>
 	<% require javascript('themes/foundation/js/foundation/foundation.js') %>
 	<% require javascript('themes/foundation/js/foundation/foundation.abide.js') %>	
 	<% require javascript('themes/foundation/js/foundation/foundation.alerts.js') %>
