@@ -14,15 +14,15 @@
 	$MetaTags(false)
 
 	<!-- Included CSS Files -->
-	<% require themedCSS('app') %>
+	<% require themedCSS('foundation') %>
 	
-	<script src="$ThemeDir/javascripts/vendor/custom.modernizr.js"></script>
+	<script src="$ThemeDir/js/vendor/custom.modernizr.js"></script>
 
 	<!-- This could be used in Page_Controller init() instead of having it here in template code.
 	define("CURRENT_THEME_DIR", SSViewer::get_theme_folder());
 	Requirements::insertHeadTags(sprintf(
 			'<script src="%s"></script>',
-			CURRENT_THEME_DIR . '/javascripts/vendor/custom.modernizr.js'
+			CURRENT_THEME_DIR . '/js/vendor/custom.modernizr.js'
 		));
 	-->
 
@@ -45,7 +45,7 @@
 
 	<script>
 		document.write('<script src=' +
-		('__proto__' in {} ? '{$ThemeDir}/javascripts/vendor/zepto' : '{$ThemeDir}/javascripts/vendor/jquery') +
+		('__proto__' in {} ? '{$ThemeDir}/js/vendor/zepto' : '{$ThemeDir}/js/vendor/jquery') +
 		'.js><\\/script>')
 	</script>
 
@@ -56,22 +56,22 @@
 	Requirements::combine_files(
 			'javascript.js',
 			array(
-					CURRENT_THEME_DIR.'/javascripts/foundation/foundation.js',
-					CURRENT_THEME_DIR.'/javascripts/foundation/foundation.abide.js',
-					CURRENT_THEME_DIR.'/javascripts/foundation/foundation.alerts.js',
-					CURRENT_THEME_DIR.'/javascripts/foundation/foundation.clearing.js',
-					CURRENT_THEME_DIR.'/javascripts/foundation/foundation.cookie.js',
-					CURRENT_THEME_DIR.'/javascripts/foundation/foundation.dropdown.js',
-					CURRENT_THEME_DIR.'/javascripts/foundation/foundation.forms.js',
-					CURRENT_THEME_DIR.'/javascripts/foundation/foundation.interchange.js',
-					CURRENT_THEME_DIR.'/javascripts/foundation/foundation.joyride.js',
-					CURRENT_THEME_DIR.'/javascripts/foundation/foundation.magellan.js',
-					CURRENT_THEME_DIR.'/javascripts/foundation/foundation.orbit.js',
-					CURRENT_THEME_DIR.'/javascripts/foundation/foundation.placeholder.js',
-					CURRENT_THEME_DIR.'/javascripts/foundation/foundation.reveal.js',
-					CURRENT_THEME_DIR.'/javascripts/foundation/foundation.section.js',
-					CURRENT_THEME_DIR.'/javascripts/foundation/foundation.tooltips.js',
-					CURRENT_THEME_DIR.'/javascripts/foundation/foundation.topbar.js',
+					CURRENT_THEME_DIR.'/js/foundation/foundation.js',
+					CURRENT_THEME_DIR.'/js/foundation/foundation.abide.js',
+					CURRENT_THEME_DIR.'/js/foundation/foundation.alerts.js',
+					CURRENT_THEME_DIR.'/js/foundation/foundation.clearing.js',
+					CURRENT_THEME_DIR.'/js/foundation/foundation.cookie.js',
+					CURRENT_THEME_DIR.'/js/foundation/foundation.dropdown.js',
+					CURRENT_THEME_DIR.'/js/foundation/foundation.forms.js',
+					CURRENT_THEME_DIR.'/js/foundation/foundation.interchange.js',
+					CURRENT_THEME_DIR.'/js/foundation/foundation.joyride.js',
+					CURRENT_THEME_DIR.'/js/foundation/foundation.magellan.js',
+					CURRENT_THEME_DIR.'/js/foundation/foundation.orbit.js',
+					CURRENT_THEME_DIR.'/js/foundation/foundation.placeholder.js',
+					CURRENT_THEME_DIR.'/js/foundation/foundation.reveal.js',
+					CURRENT_THEME_DIR.'/js/foundation/foundation.section.js',
+					CURRENT_THEME_DIR.'/js/foundation/foundation.tooltips.js',
+					CURRENT_THEME_DIR.'/js/foundation/foundation.topbar.js',
 			)
 		);
 
@@ -80,22 +80,22 @@
 	<!-- Included JS Files (Uncompressed) -->
 
 	
-	<% require javascript('themes/foundation/javascripts/foundation/foundation.js') %>
-	<% require javascript('themes/foundation/javascripts/foundation/foundation.abide.js') %>	
-	<% require javascript('themes/foundation/javascripts/foundation/foundation.alerts.js') %>
-	<% require javascript('themes/foundation/javascripts/foundation/foundation.clearing.js') %>
-	<% require javascript('themes/foundation/javascripts/foundation/foundation.cookie.js') %>
-	<% require javascript('themes/foundation/javascripts/foundation/foundation.dropdown.js') %>
-	<% require javascript('themes/foundation/javascripts/foundation/foundation.forms.js') %>
-	<% require javascript('themes/foundation/javascripts/foundation/foundation.interchange.js') %>
-	<% require javascript('themes/foundation/javascripts/foundation/foundation.joyride.js') %>
-	<% require javascript('themes/foundation/javascripts/foundation/foundation.magellan.js') %>
-	<% require javascript('themes/foundation/javascripts/foundation/foundation.orbit.js') %>
-	<% require javascript('themes/foundation/javascripts/foundation/foundation.placeholder.js') %>
-	<% require javascript('themes/foundation/javascripts/foundation/foundation.reveal.js') %>
-	<% require javascript('themes/foundation/javascripts/foundation/foundation.section.js') %>
-	<% require javascript('themes/foundation/javascripts/foundation/foundation.tooltips.js') %>
-	<% require javascript('themes/foundation/javascripts/foundation/foundation.topbar.js') %>
+	<% require javascript('themes/foundation/js/foundation/foundation.js') %>
+	<% require javascript('themes/foundation/js/foundation/foundation.abide.js') %>	
+	<% require javascript('themes/foundation/js/foundation/foundation.alerts.js') %>
+	<% require javascript('themes/foundation/js/foundation/foundation.clearing.js') %>
+	<% require javascript('themes/foundation/js/foundation/foundation.cookie.js') %>
+	<% require javascript('themes/foundation/js/foundation/foundation.dropdown.js') %>
+	<% require javascript('themes/foundation/js/foundation/foundation.forms.js') %>
+	<% require javascript('themes/foundation/js/foundation/foundation.interchange.js') %>
+	<% require javascript('themes/foundation/js/foundation/foundation.joyride.js') %>
+	<% require javascript('themes/foundation/js/foundation/foundation.magellan.js') %>
+	<% require javascript('themes/foundation/js/foundation/foundation.orbit.js') %>
+	<% require javascript('themes/foundation/js/foundation/foundation.placeholder.js') %>
+	<% require javascript('themes/foundation/js/foundation/foundation.reveal.js') %>
+	<% require javascript('themes/foundation/js/foundation/foundation.section.js') %>
+	<% require javascript('themes/foundation/js/foundation/foundation.tooltips.js') %>
+	<% require javascript('themes/foundation/js/foundation/foundation.topbar.js') %>
 	
 	<script>
 		$(document).foundation();

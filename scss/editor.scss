@@ -1,0 +1,12 @@
+/**
+ * This support file is used to style the WYSIWYG editor in the CMS
+ */
+
+@import "foundation/variables";
+
+@import "foundation/components/global";
+@import "foundation/components/type";
+
+body.mceContentBody{
+	font-size: $em-base;
+}
